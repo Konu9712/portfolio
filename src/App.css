@@ -1,0 +1,10 @@
+.contentContainer{
+    margin-left: 5%;
+    margin-left: 20%;
+}
+@media (min-width: 992px) {
+    .container {
+      margin-top: 9%;
+    }
+  }
+  
