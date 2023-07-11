@@ -1,0 +1,38 @@
+.animated__layers {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  & > * {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+  }
+}
+
+.dot {
+  background-color: orange;
+  top: 0%;
+  left: 100%;
+  widows: 100%;
+  height: 200%;
+  width: 200%;
+  transform: translate(-50%, -50%);
+
+}
+.container {
+ 
+  overflow: auto; /* Add a scrollbar when content exceeds the container dimensions */
+  border: 1px solid #ccc; /* Optional: Add a border for visual appearance */
+  padding: 10px;
+   /* Optional: Add padding to the container */
+background-color:#ccc;
+  }
+
+
+
