@@ -16,6 +16,7 @@ export default function MacbookPro161() {
           >
             <Sidebar />
           </div>
+          <div className="col"></div>
           <div className="col-lg-8 col-md-12 mainContainer">
             <Circle />
             <Me />

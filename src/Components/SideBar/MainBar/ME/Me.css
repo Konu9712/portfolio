@@ -1,0 +1,16 @@
+.name{
+    color:#EDDE59;
+font-family: 'Silkscreen', cursive;
+text-align: right;
+font-size: 3.5rem;
+}
+.nameWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bioWrapper{
+    margin-top: 5%;
+    font-family: 'Silkscreen', cursive;
+font-size: 1.2rem;
+margin-right: 5%;
+  }
