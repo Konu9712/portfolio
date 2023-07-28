@@ -1,0 +1,22 @@
+
+@media (max-width: 768px) {
+    .sidebar {
+      width: 20%;
+      position: fixed;
+      height: 100vh;
+    }
+  
+    .mainContainer {
+      width: 70%;
+    }
+    .container {
+      top: 0;
+      margin-top: 0%
+    }
+    
+  }
+  .container {
+    margin-top: 9%;
+  }
+  
+  
