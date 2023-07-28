@@ -1,15 +1,26 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, ListGroup, Nav, Navbar } from "react-bootstrap";
 import "./SideBar.css";
+import { setNavbar } from "../../actions/navbarAction";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const handleNavbarToggle = () => {
+    const updatedNavbarState = !isNavbarOpen;
+    setIsNavbarOpen(updatedNavbarState);
+    dispatch(setNavbar(updatedNavbarState));
+  };
   return (
     <>
-      <Navbar expand="sm xs ">
+      <Navbar expand="sm xs " onToggle={handleNavbarToggle}>
         <Navbar.Toggle aria-controls="sidebarContent" />
         <Navbar.Collapse id="sidebarContent">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto" style={{ alignItems: "center" }}>
             <div className="mainContainer ">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/tjmvk4dtp78-104%3A10?alt=media&token=6ccd431c-8989-4823-93f6-f2bd6f422782"

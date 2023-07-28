@@ -3,7 +3,7 @@ import { useScroll, animated } from "@react-spring/web";
 import styles from "./styles.module.scss";
 // import './module.css'
 
-export default function Circle() {
+export const Circle = () => {
   const { scrollYProgress } = useScroll();
 
   return (
@@ -14,13 +14,8 @@ export default function Circle() {
           style={{
             clipPath: scrollYProgress.to((val) => `circle(${val * 100}%)`),
           }}
-        >
-          <h1 className={styles.title}>hello</h1>
-          <h1 className={styles.title}>hello</h1>
-          <h1 className={styles.title}>hello</h1>
-          <h1 className={styles.title}>hello</h1>
-        </animated.div>
+        ></animated.div>
       </div>
     </div>
   );
-}
+};
