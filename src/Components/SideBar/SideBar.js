@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, ListGroup, Nav, Navbar } from "react-bootstrap";
+import { Card, Nav, Navbar } from "react-bootstrap";
 import "./SideBar.css";
 import { setNavbar } from "../../actions/navbarAction";
 
