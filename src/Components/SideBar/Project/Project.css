@@ -1,0 +1,23 @@
+
+
+.firstImage{
+  max-width: 40vh;
+}
+.icon{
+  width: 70%;
+    margin-top: 20vh;
+}
+.second{
+  margin-top: 0vh;
+}
+.salescampContent{
+  font-family: 'Silkscreen', cursive;
+    font-size: 1.3rem;
+    color: #fff;
+    min-width: 150%
+}
+.secondImage{
+  opacity: 1;
+  margin-left: 50%;
+  width: 55%;
+}

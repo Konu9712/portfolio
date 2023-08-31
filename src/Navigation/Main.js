@@ -4,11 +4,13 @@ import Sidebar from "../Components/SideBar/SideBar";
 import { Me } from "../Components/SideBar/MainBar/ME/Me";
 import { Circle } from "../Components/SideBar/MainBar/ME/Circle";
 import { useSelector } from "react-redux";
+import Project from "../Components/SideBar/Project/Project";
+import PageScroll from "react-page-scroll";
 
 const Main = () => {
   const navSelector = useSelector((state) => state.nav);
-  console.log("navSelector", navSelector);
   const { isNav } = navSelector;
+
   return (
     <div>
       <div>
@@ -22,52 +24,19 @@ const Main = () => {
             </div>
             <div className="col"></div>
             {!isNav && (
-              <div className="col-lg-9 col-md-12 col-sm-12 mainContainer">
-                <Circle />
-                <Me />
-                <div class="main-content-loader">
-                  <div class="spinner">
-                    <div class="spinner__progress"></div>
-                  </div>
+              <>
+                <div className=" mainContainer">
+                  <Circle />
+                  <PageScroll>
+                    <div id="page1" className="page ">
+                      <Me />
+                    </div>
+                    <div id="page2" className="page ">
+                      <Project />
+                    </div>
+                  </PageScroll>
                 </div>
-                <div>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </div>
-                {/* Rest of your main content */}
-                {/* ... */}
-              </div>
+              </>
             )}
           </div>
         </div>
