@@ -17,3 +17,9 @@ margin-right: 5%;
 .intro{
   color: #DF8354;
 }
+@media screen and (max-width: 768px) {
+  .bioWrapper{
+  font-size: 1rem;
+}
+
+}

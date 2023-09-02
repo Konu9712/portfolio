@@ -1,4 +1,18 @@
 
+/* Hide the firstImage and secondImage on screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .firstImage,
+  .secondImage {
+    display: none;
+  }
+  .salescampContent{
+    font-size: 1rem !important;
+    }
+    .contentWrapper{
+      max-width: 75%;;
+    }
+}
+
 
 .firstImage{
   max-width: 40vh;
@@ -6,6 +20,7 @@
 .icon{
   width: 70%;
     margin-top: 20vh;
+    max-width: 100%;
 }
 .second{
   margin-top: 0vh;

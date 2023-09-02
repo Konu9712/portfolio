@@ -16,22 +16,19 @@ const Main = () => {
       <div>
         <div className="container">
           <div className="row ">
-            <div
-              className="col-lg-3 col-md-12 sidebar"
-              style={{ zIndex: 1, position: "fixed", height: "100vh" }}
-            >
+            <div className="col-lg-3 col-md-12 sidebar">
               <Sidebar />
             </div>
             <div className="col"></div>
             {!isNav && (
               <>
                 <div className=" mainContainer">
-                  <Circle />
+                  <Circle className="circle" />
                   <PageScroll>
-                    <div id="page1" className="page ">
+                    <div id="page1" className="page">
                       <Me />
                     </div>
-                    <div id="page2" className="page ">
+                    <div id="page2" className="page">
                       <Project />
                     </div>
                   </PageScroll>
