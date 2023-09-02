@@ -14,7 +14,7 @@ const Project = () => {
   return (
     <div>
       <div className="first row">
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6">
           <animated.img
             className="firstImage"
             src={Iphone1}
@@ -22,13 +22,13 @@ const Project = () => {
             style={fadeInOutAnimation}
           />
         </div>
-        <div className="col-md-6 col-sm-12">
-          <Icon className="icon" />
+        <div className="col-md-6">
+          <Icon className="icon" style={fadeInOutAnimation} />
         </div>
       </div>
       <div className=" second row">
-        <div className="col-md-6 col-sm-12">
-          <p className="salescampContent col-md-6 col-sm-12">
+        <div className="col-md-6 contentWrapper">
+          <p className="salescampContent col-md-6">
             Salescamp is a comprehensive sales suite designed to optimize and
             streamline the sales cycle for businesses. It offers a range of
             customizable tools and features that empower users to enhance their
