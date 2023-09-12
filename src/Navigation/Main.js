@@ -6,6 +6,7 @@ import { Circle } from "../Components/SideBar/MainBar/ME/Circle";
 import { useSelector } from "react-redux";
 import Project from "../Components/SideBar/Project/Project";
 import PageScroll from "react-page-scroll";
+import Service from "../Components/SideBar/Service/Service";
 
 const Main = () => {
   const navSelector = useSelector((state) => state.nav);
@@ -22,13 +23,30 @@ const Main = () => {
             <div className="col"></div>
             {!isNav && (
               <>
-                <div className=" mainContainer">
-                  <Circle className="circle" />
+                <div className="mainContainer">
+                  <div>
+                    <Circle className="circle" />
+                  </div>
                   <PageScroll>
-                    <div id="page1" className="page">
+                    <div
+                      id="page1"
+                      className="page"
+                      style={{ height: "100vh" }}
+                    >
                       <Me />
                     </div>
-                    <div id="page2" className="page">
+                    <div
+                      id="page2"
+                      className="page"
+                      style={{ height: "100vh" }}
+                    >
+                      <Service />
+                    </div>
+                    <div
+                      id="page3"
+                      className="page"
+                      style={{ height: "100vh" }}
+                    >
                       <Project />
                     </div>
                   </PageScroll>

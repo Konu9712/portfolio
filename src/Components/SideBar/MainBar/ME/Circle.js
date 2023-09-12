@@ -1,7 +1,6 @@
 import { useScroll, animated } from "@react-spring/web";
 
 import styles from "./styles.module.scss";
-// import './module.css'
 
 export const Circle = () => {
   const { scrollYProgress } = useScroll();
