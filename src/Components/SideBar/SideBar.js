@@ -34,12 +34,12 @@ const Sidebar = () => {
               </Card>
               <Card className="cardContainer container2 mt-3">
                 <div className="group-2">
-                  <p className="projects">Projects</p>
+                  <p className="services">Services</p>
                 </div>
               </Card>
               <Card className="cardContainer container3 mt-3">
                 <div className="group-3">
-                  <p className="blogs">Blogs</p>
+                  <p className="projects">Projects</p>
                 </div>
               </Card>
               <Card className="cardContainer container4 mt-3">

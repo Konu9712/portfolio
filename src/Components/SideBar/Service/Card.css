@@ -1,0 +1,73 @@
+
+.serviceTitle{
+  margin-bottom: 3%;
+  font-family: 'Silkscreen', cursive;
+
+}
+.serviceCard{
+    width: 80%;
+    height: 35vh;
+    justify-content: center; 
+    text-align: center;
+    margin-left: 5%;
+    background: linear-gradient(300deg,  #D04600, #EDDE59, 150%, transparent); 
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: #D04600;
+  
+}
+.serviceCardTitle{
+    font-family: 'Silkscreen', cursive;
+    margin-top: 3%;
+    font-size: 1.1em;
+    
+}
+.table{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.icon_Service {
+    width: 70%;
+    /* height: auto; */
+    margin-top: 5%;
+  }
+  @media (max-width: 768px) {
+    .mainContainer{
+      height: 100vh;
+      width: fit-content;
+      padding: 0px;
+    }
+    .serviceCardTitle {
+      font-size: 0.5em; /* Adjust the font size as needed */
+    }
+    .serviceCard{
+      border-radius: 15px;
+      height: 20vh;
+    }
+    .cardBody{
+      padding: 10%;
+    }
+    .serviceTitle{
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Adjust font size for screens up to 576px wide (e.g., mobile devices) */
+    .serviceCardTitle {
+      font-size: 0.4em; /* Adjust the font size as needed */
+    }
+    .serviceCard{
+      border-radius: 15px;
+      height: 15vh;
+    }
+    .cardBody{
+      padding: 10%;
+    }
+    .serviceTitle{
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }
