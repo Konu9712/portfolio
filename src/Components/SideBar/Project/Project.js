@@ -23,7 +23,9 @@ const Project = () => {
           />
         </div>
         <div className="col-md-6">
-          <Icon className="icon" style={fadeInOutAnimation} />
+          <a href="https://www.salescamp.app/" target="_blank">
+            <Icon className="icon" style={fadeInOutAnimation} />
+          </a>
         </div>
       </div>
       <div className=" second row">
